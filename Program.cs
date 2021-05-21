@@ -6,6 +6,8 @@ namespace Bongo_Wizard
     {
         static void Main(string[] args)
         {
+            // JACKIES CODE
+            // TOUCH AND YOU DIE
             Console.WriteLine("Bongo Wizard!");
         }
     }
