@@ -9,6 +9,7 @@ namespace Bongo_Wizard
             // JACKIES CODE
             // TOUCH AND YOU DIE
             // TOUCHED BY JAKOB
+            // RIP JAKOB, WHO DIED ON THE 21st OF MARCH 2021
             Console.WriteLine("Bongo Wizard!");
         }
     }
