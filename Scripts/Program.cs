@@ -1,16 +1,27 @@
-﻿using System;
+﻿// Class written by Jackie Gamby-Haycock
+using System;
 
+/// <summary>
+/// Base class for the program. Controls pretty much EVERYTHING
+/// </summary>
 class Program
 {
     public static Classes.Settings settings = new Classes.Settings();
     int[,] lv1 = { };
     public static Classes.Dungeon level01 = new Classes.Dungeon();
 
-    public static Action awake;
-    public static Action update;
+    public static Action awake = new Action(Dummy);
+    public static Action update = new Action(Dummy);
+
+    static void Dummy()
+    {
+
+    }
 
     static void Main(string[] args)
     {
+        BongoWizard game = new BongoWizard();
+
         awake.Invoke();
 
         bool active = true;
