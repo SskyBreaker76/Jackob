@@ -5,6 +5,8 @@ using System.Text;
 
 public class Game
 {
+    public Classes.Settings settings { get; private set; }
+
     public Game()
     {
         Program.awake += Awake;
@@ -13,7 +15,7 @@ public class Game
 
     public virtual void Awake()
     {
-
+        settings = Program.settings;
     }
 
     public virtual void Update()
