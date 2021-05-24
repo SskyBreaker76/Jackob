@@ -13,6 +13,13 @@ class Program
     public static Action awake = new Action(Dummy);
     public static Action update = new Action(Dummy);
 
+    static bool kill = false;
+
+    public static void Quit()
+    {
+        Environment.Exit(0);
+    }
+
     static void Dummy()
     {
 
@@ -24,7 +31,7 @@ class Program
 
         awake.Invoke();
 
-        bool active = true;
+        bool active = !kill;
 
         do
         {

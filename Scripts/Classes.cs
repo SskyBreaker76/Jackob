@@ -4,6 +4,15 @@ using System.Text;
 
 namespace Classes
 {
+    public enum GameState
+    {
+        Title,
+        InLevel,
+        LevelComplete,
+        GameOver,
+        QuitConfirmation
+    }
+
     public class Vector2
     {
         public int x;
@@ -37,7 +46,7 @@ namespace Classes
 
     public class Settings
     {
-        public char floorChar = '.';
+        public char floorChar = ' ';
         public char wallChar = '#';
 
         public char bongoChar = 'B';
