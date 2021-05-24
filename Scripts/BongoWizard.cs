@@ -99,7 +99,7 @@ public class BongoWizard : Game
         inf.Key != ConsoleKey.LeftArrow &&
         inf.Key != ConsoleKey.RightArrow);
 
-        Vector2 oldPos = playerPosition;
+        Vector2 oldPos = new Vector2(playerPosition.x, playerPosition.y);
 
         if (inf.Key == ConsoleKey.UpArrow)
         {
