@@ -13,5 +13,16 @@ public class BongoWizard : Game
     {
         base.Update();
 
+    repeatLoop:
+
+        ConsoleKey key;
+
+        do
+        {
+
+        }
+        while (!Console.KeyAvailable);
+
+        goto repeatLoop;
     }
 }

@@ -6,13 +6,8 @@ class Program
     int[,] lv1 = { };
     public static Classes.Dungeon level01 = new Classes.Dungeon();
 
-    public static Action awake = new Action(Dummy);
-    public static Action update = new Action(Dummy);
-
-    static void Dummy()
-    {
-
-    }
+    public static Action awake;
+    public static Action update;
 
     static void Main(string[] args)
     {
