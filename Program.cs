@@ -4,13 +4,15 @@ namespace Bongo_Wizard
 {
     class Program
     {
+        public class Settings
+        {
+            public char bongoChar = 'B';
+            public char wizardChar = 'W';
+        }
+
         static void Main(string[] args)
         {
-            // JACKIES CODE
-            // TOUCH AND YOU DIE
-            // TOUCHED BY JAKOB
-            // RIP JAKOB, WHO DIED ON THE 21st OF MARCH 2021
-            Console.WriteLine("Bongo Wizard!");
+
         }
     }
 }
